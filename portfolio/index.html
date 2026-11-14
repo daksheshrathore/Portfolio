@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dakshesh Rathore | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Dakshesh Rathore — IT Engineering Student at IIPS DAVV, Data Analytics Enthusiast, and developer of YogyaSetu.">
+  <meta name="author" content="Dakshesh Rathore">
+
+  <!-- Open Graph / Meta tags -->
+  <meta property="og:title" content="Dakshesh Rathore | Portfolio">
+  <meta property="og:description" content="IT Engineering Student @ IIPS DAVV | Data Analytics Enthusiast (Python & SQL) | Builder of YogyaSetu">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Dakshesh Rathore Home">
+        <span class="brand-initials">DR</span>
+        <span class="brand-name">Dakshesh Rathore</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#current" class="nav-link">Current Focus</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li><a href="#interests" class="nav-link">Interests</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="btn-icon" type="button" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-toggle" class="btn-icon mobile-menu-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <svg class="icon icon-menu" viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- 1. HEADER / HERO SECTION -->
+    <section id="hero" class="section hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-badge">Welcome to my portfolio</span>
+          <h1 class="hero-title">Dakshesh Rathore</h1>
+          <p class="hero-subtitle">IT Student @ IIPS DAVV</p>
+          <p class="hero-lead">
+            Building intuitive web experiences and analyzing structured data to solve practical challenges.
+          </p>
+
+          <!-- Quick Contact Action Icons -->
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-primary">
+              <svg class="btn-svg" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Get In Touch
+            </a>
+            <a href="https://github.com/daksheshrathore" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" aria-label="GitHub Profile (opens in new tab)">
+              <svg class="btn-svg" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/dakshesh-rathore-0104153ab/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" aria-label="LinkedIn Profile (opens in new tab)">
+              <svg class="btn-svg" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Photo -->
+        <div class="hero-image-wrapper">
+          <div class="hero-image-frame">
+            <img src="profile.jpg" alt="Dakshesh Rathore" class="hero-profile-img" width="260" height="325" fetchpriority="high">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Background</span>
+          <h2 class="section-title">About Me</h2>
+        </header>
+
+        <div class="card about-card">
+          <p class="about-text">
+            I am an <strong>IT Engineering Student (B.Tech + M.Tech Integrated) @ IIPS DAVV</strong> with a strong foundation in computer science, core programming, and modern software development.
+          </p>
+          <p class="about-text">
+            As a dedicated <strong>Data Analytics Enthusiast</strong> proficient in <strong>Python &amp; SQL</strong>, I enjoy extracting insights from data and architecting structured, reliable software solutions.
+          </p>
+          <p class="about-text">
+            I am continually learning new technologies and expanding my skill set, and I am actively <strong>open to opportunities</strong> to contribute to impactful engineering teams.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. CURRENTLY WORKING ON -->
+    <section id="current" class="section">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Current Spotlight</span>
+          <h2 class="section-title">Currently Working On</h2>
+        </header>
+
+        <div class="card spotlight-card">
+          <div class="spotlight-header">
+            <div class="spotlight-title-group">
+              <span class="spotlight-subtitle">Featured Focus</span>
+              <h3 class="spotlight-title">Frontend of YogyaSetu</h3>
+            </div>
+            <div class="status-badge" aria-label="Status: Learning - Alpha">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span class="status-label">Learning &bull; Alpha</span>
+            </div>
+          </div>
+
+          <p class="spotlight-desc">
+            Designing and engineering the frontend architecture for <strong>YogyaSetu</strong>, creating clean, responsive, and role-driven interfaces that support trainees, trainers, and administrators across structured learning journeys.
+          </p>
+
+          <div class="tech-stack-group">
+            <span class="tech-label">Tech Stack:</span>
+            <div class="tag-cloud">
+              <span class="tag">C++</span>
+              <span class="tag">CSS</span>
+              <span class="tag">HTML</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Portfolio Work</span>
+          <h2 class="section-title">Projects</h2>
+        </header>
+
+        <div class="projects-grid">
+          <article class="card project-card">
+            <div class="project-header">
+              <div class="project-indicator">
+                <span class="project-index">01</span>
+                <span class="project-badge">Featured Project</span>
+              </div>
+              <h3 class="project-title">YogyaSetu</h3>
+            </div>
+
+            <p class="project-description">
+              A role-based learning and competency platform that connects trainees, trainers, and administrators through intelligent learning pathways and evidence-based skill development.
+            </p>
+
+            <div class="project-tech">
+              <div class="tag-cloud">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Power BI</span>
+                <span class="tag">C++</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://youtu.be/2mjQMyqT9LM" target="_blank" rel="noopener noreferrer" class="btn btn-project-demo" aria-label="Watch YogyaSetu Live Demo on YouTube (opens in new tab)">
+                <svg class="btn-svg" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                Watch Live Demo
+                <svg class="btn-svg-external" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Core Proficiencies</span>
+          <h2 class="section-title">Skills</h2>
+          <p class="section-subtitle">Grouped cleanly by capability area — focused on real skills without artificial progress meters.</p>
+        </header>
+
+        <div class="skills-grid">
+          <!-- Programming & Querying -->
+          <div class="card skill-group">
+            <h3 class="skill-category-title">
+              <svg class="category-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              Programming &amp; Querying
+            </h3>
+            <div class="skills-chips">
+              <div class="skill-chip">
+                <span class="chip-name">C++</span>
+                <span class="chip-desc">Object-oriented programming, data structures, algorithms</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-name">SQL</span>
+                <span class="chip-desc">Relational database design, joins, aggregations, queries</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-name">Python</span>
+                <span class="chip-desc">Data analysis, scripting, logic automation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Fundamentals -->
+          <div class="card skill-group">
+            <h3 class="skill-category-title">
+              <svg class="category-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              Web Fundamentals
+            </h3>
+            <div class="skills-chips">
+              <div class="skill-chip">
+                <span class="chip-name">HTML</span>
+                <span class="chip-desc">Semantic HTML5, accessibility standards, clean DOM hierarchy</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-name">CSS</span>
+                <span class="chip-desc">Modern Flexbox, CSS Grid, custom properties, responsive layout</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-name">JavaScript</span>
+                <span class="chip-desc">DOM manipulation, responsive state, lightweight client scripts</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Analytics & Tools -->
+          <div class="card skill-group">
+            <h3 class="skill-category-title">
+              <svg class="category-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+              Analytics &amp; Tools
+            </h3>
+            <div class="skills-chips">
+              <div class="skill-chip">
+                <span class="chip-name">Power BI</span>
+                <span class="chip-desc">Business intelligence, interactive dashboards, KPI reporting</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-name">Git &amp; GitHub</span>
+                <span class="chip-desc">Version control, repository management, collaborative workflows</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CERTIFICATES -->
+    <section id="certificates" class="section">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Credentials</span>
+          <h2 class="section-title">Certificates</h2>
+          <p class="section-subtitle">Verified professional credentials and job simulations.</p>
+        </header>
+
+        <ol class="certificate-list">
+          <!-- a. Oracle Certified Foundations Associate -->
+          <li class="certificate-item card">
+            <div class="cert-order" aria-hidden="true">a</div>
+            <div class="cert-info">
+              <h3 class="cert-name">Oracle Certified Foundations Associate</h3>
+              <span class="cert-issuer">Oracle University</span>
+            </div>
+            <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=9B7D3DFB33F4479FA61D2EAD9EEC0BAACCD63D7C888A164A5C6BB5A6DBD8FC99" target="_blank" rel="noopener noreferrer" class="cert-link" aria-label="Verify Oracle Certified Foundations Associate credential (opens in new tab)">
+              Verify Credential
+              <svg class="icon-link-external" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </li>
+
+          <!-- b. CS50x -->
+          <li class="certificate-item card">
+            <div class="cert-order" aria-hidden="true">b</div>
+            <div class="cert-info">
+              <h3 class="cert-name">CS50x: Introduction to Computer Science</h3>
+              <span class="cert-issuer">Harvard University</span>
+            </div>
+            <a href="https://certificates.cs50.io/28e228ae-aa52-47d5-96b1-68c75e66585c.pdf?size=letter" target="_blank" rel="noopener noreferrer" class="cert-link" aria-label="View CS50x Certificate from Harvard University (opens in new tab)">
+              View Certificate
+              <svg class="icon-link-external" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </li>
+
+          <!-- c. British Airways Engineering Job Simulation -->
+          <li class="certificate-item card">
+            <div class="cert-order" aria-hidden="true">c</div>
+            <div class="cert-info">
+              <h3 class="cert-name">British Airways Engineering Job Simulation</h3>
+              <span class="cert-issuer">Forage</span>
+            </div>
+            <a href="https://www.theforage.com/completion-certificates/tMjbs76F526fF5v3G/WmDnBzkLZFR9Rcjqa_tMjbs76F526fF5v3G_6959337cf76d215bcfc76fdc_1782406305812_completion_certificate.pdf" target="_blank" rel="noopener noreferrer" class="cert-link" aria-label="View British Airways Simulation Certificate (opens in new tab)">
+              View Certificate
+              <svg class="icon-link-external" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </li>
+
+          <!-- d. Deloitte Data Analytics Job Simulation -->
+          <li class="certificate-item card">
+            <div class="cert-order" aria-hidden="true">d</div>
+            <div class="cert-info">
+              <h3 class="cert-name">Deloitte Data Analytics Job Simulation</h3>
+              <span class="cert-issuer">Forage</span>
+            </div>
+            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_6959337cf76d215bcfc76fdc_1782037155175_completion_certificate.pdf" target="_blank" rel="noopener noreferrer" class="cert-link" aria-label="View Deloitte Data Analytics Certificate (opens in new tab)">
+              View Certificate
+              <svg class="icon-link-external" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </li>
+
+          <!-- e. Deloitte Cyber Job Simulation -->
+          <li class="certificate-item card">
+            <div class="cert-order" aria-hidden="true">e</div>
+            <div class="cert-info">
+              <h3 class="cert-name">Deloitte Cyber Job Simulation</h3>
+              <span class="cert-issuer">Forage</span>
+            </div>
+            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_6959337cf76d215bcfc76fdc_1782037819419_completion_certificate.pdf" target="_blank" rel="noopener noreferrer" class="cert-link" aria-label="View Deloitte Cyber Certificate (opens in new tab)">
+              View Certificate
+              <svg class="icon-link-external" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </li>
+
+          <!-- f. HP LIFE Business Communication Certification -->
+          <li class="certificate-item card">
+            <div class="cert-order" aria-hidden="true">f</div>
+            <div class="cert-info">
+              <h3 class="cert-name">HP LIFE Business Communication Certification</h3>
+              <span class="cert-issuer">HP LIFE</span>
+            </div>
+            <a href="https://www.life-global.org/certificate/195a063c-d08f-4a75-abe0-b449487521ff" target="_blank" rel="noopener noreferrer" class="cert-link" aria-label="Verify HP LIFE Business Communication Certificate (opens in new tab)">
+              Verify Credential
+              <svg class="icon-link-external" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </li>
+
+          <!-- g. HP IT for Business Success -->
+          <li class="certificate-item card">
+            <div class="cert-order" aria-hidden="true">g</div>
+            <div class="cert-info">
+              <h3 class="cert-name">HP IT for Business Success</h3>
+              <span class="cert-issuer">HP LIFE</span>
+            </div>
+            <a href="https://www.life-global.org/certificate/0c4862fc-be23-44ae-b9de-60d5a53c9d11" target="_blank" rel="noopener noreferrer" class="cert-link" aria-label="Verify HP IT for Business Success Certificate (opens in new tab)">
+              Verify Credential
+              <svg class="icon-link-external" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 7. HOBBIES & INTERESTS -->
+    <section id="interests" class="section">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Beyond Engineering</span>
+          <h2 class="section-title">Hobbies &amp; Interests</h2>
+          <p class="section-subtitle">Supporting personal pursuits that foster discipline, focus, and creativity.</p>
+        </header>
+
+        <div class="interests-grid">
+          <div class="card interest-chip">
+            <span class="interest-icon" role="img" aria-label="Football">⚽</span>
+            <div class="interest-details">
+              <span class="interest-title">Football</span>
+              <span class="interest-role">Centre Attacking Midfielder</span>
+            </div>
+          </div>
+
+          <div class="card interest-chip">
+            <span class="interest-icon" role="img" aria-label="Flute">🪈</span>
+            <div class="interest-details">
+              <span class="interest-title">Playing Flute</span>
+              <span class="interest-role">Musical Expression</span>
+            </div>
+          </div>
+
+          <div class="card interest-chip">
+            <span class="interest-icon" role="img" aria-label="Formula 1 Racing">🏎️</span>
+            <div class="interest-details">
+              <span class="interest-title">Watching Formula 1</span>
+              <span class="interest-role">Strategy &amp; Engineering</span>
+            </div>
+          </div>
+
+          <div class="card interest-chip">
+            <span class="interest-icon" role="img" aria-label="Books">📚</span>
+            <div class="interest-details">
+              <span class="interest-title">Reading Books</span>
+              <span class="interest-role">Perspective &amp; Growth</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CONTACT / FOOTER [CLICKABLE] -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Connection</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Feel free to connect directly for questions, discussions, or opportunities.</p>
+        </header>
+
+        <div class="contact-card-grid">
+          <!-- Email Card with Copy Button -->
+          <div class="card contact-card">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="contact-card-content">
+              <span class="contact-card-label">Email Address</span>
+              <a href="mailto:daksheshrathore71@gmail.com" class="contact-card-link">daksheshrathore71@gmail.com</a>
+            </div>
+            <button id="copy-email-btn" class="btn-copy" type="button" aria-label="Copy email address to clipboard" data-email="daksheshrathore71@gmail.com">
+              <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span class="copy-text">Copy</span>
+            </button>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <a href="https://www.linkedin.com/in/dakshesh-rathore-0104153ab/" target="_blank" rel="noopener noreferrer" class="card contact-card contact-card-interactive" aria-label="Visit LinkedIn profile (opens in new tab)">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </div>
+            <div class="contact-card-content">
+              <span class="contact-card-label">LinkedIn</span>
+              <span class="contact-card-link">dakshesh-rathore-0104153ab</span>
+            </div>
+            <svg class="external-arrow" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+
+          <!-- GitHub Card -->
+          <a href="https://github.com/daksheshrathore" target="_blank" rel="noopener noreferrer" class="card contact-card contact-card-interactive" aria-label="Visit GitHub profile (opens in new tab)">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </div>
+            <div class="contact-card-content">
+              <span class="contact-card-label">GitHub</span>
+              <span class="contact-card-link">daksheshrathore</span>
+            </div>
+            <svg class="external-arrow" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p class="footer-copy">&copy; <span id="year">2026</span> Dakshesh Rathore. All rights reserved.</p>
+      <div class="footer-actions">
+        <span class="footer-tag">Deployable to GitHub Pages</span>
+        <a href="#hero" class="back-to-top" aria-label="Back to top of page">
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+          Back to top
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast for Copy Notification -->
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-hidden="true">
+    Email address copied to clipboard!
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
